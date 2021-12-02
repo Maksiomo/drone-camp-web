@@ -7,7 +7,7 @@ export default function Education() {
       <Nav picked={"education"}/>
       <main className="education">
         <Sidebar/>
-        <p>Базовая информация</p>
+        <p className="education">Базовая информация</p>
       </main>
     </div>
   )
