@@ -7,7 +7,10 @@ export default function Laws() {
       <Nav picked={"education"}/>
       <main className="education">
         <Sidebar/>
-        <h2>Введение</h2>
+        <div>
+          <h2>Введение</h2>
+          <p>gjkr<br/>gsjbkd</p>
+        </div>
       </main>
     </div>
   )
