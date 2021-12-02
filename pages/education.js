@@ -1,11 +1,12 @@
 import Nav from '../components/nav'
+import Sidebar from '../components/sidebar'
 
-export default function Home() {
+export default function Education() {
   return (
     <div>
       <Nav/>
       <main>
-        Тест
+        <Sidebar/>
       </main>
     </div>
   )
