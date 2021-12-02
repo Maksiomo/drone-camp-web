@@ -6,8 +6,8 @@ export default function Laws() {
     <div>
       <Nav picked={"education"} />
       <main className="education">
-        <Sidebar />
-        <div>
+        <Sidebar picked={"laws"}/>
+        <div className="education-text">
           <p><h2>Введение</h2>
             <p> Существует основной закон о <b>БПЛА</b>, или <b>Воздушный кодекс РФ</b> от 19.03.1997 N 60-ФЗ (с последней редакцией от 01.04.2020).
               <br />Законом установлены правила и рекомендации касательно эксплуатации беспилотных летательных аппаратов.
