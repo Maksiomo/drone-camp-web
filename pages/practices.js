@@ -4,7 +4,7 @@ export default function Practices() {
   return (
     <div>
       <Nav/>
-      <main>
+      <main className="practices">
         Тест
       </main>
     </div>

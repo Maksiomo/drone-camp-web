@@ -5,8 +5,7 @@ export default function Home() {
   return (
     <div>
       <Nav/>
-      <Sidebar/>
-      <main>
+      <main className="about">
         Тест
       </main>
     </div>

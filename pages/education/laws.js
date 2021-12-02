@@ -7,7 +7,7 @@ export default function Laws() {
       <Nav/>
       <main className="education">
         <Sidebar/>
-        Законы и прочая
+        <p>Законы и прочая</p>
       </main>
     </div>
   )

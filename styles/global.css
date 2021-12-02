@@ -16,3 +16,18 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.practices {
+  display: flex;
+  flex-direction: row;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+}

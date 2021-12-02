@@ -4,7 +4,7 @@ export default function Test() {
   return (
     <div>
       <Nav/>
-      <main>
+      <main className="test">
         Тест
       </main>
     </div>
