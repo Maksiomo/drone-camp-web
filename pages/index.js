@@ -5,7 +5,7 @@ import logo from '../public/logo.png'
 export default function Home() {
   return (
     <div>
-      <Nav picked={"about"}/>
+      <Nav pressed={"about"}/>
       <main className="about">
         <div className="about-text">
           Проект обучения управлению БПЛА от команды JABCA.

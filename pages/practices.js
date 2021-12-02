@@ -3,7 +3,7 @@ import Nav from '../components/nav'
 export default function Practices() {
   return (
     <div>
-      <Nav picked={"practices"}/>
+      <Nav pressed={"practices"}/>
       <main className="practices">
         Тест
       </main>

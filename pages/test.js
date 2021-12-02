@@ -11,7 +11,7 @@ export default function Test() {
 
   return (
     <div>
-      <Nav picked={"test"}/>
+      <Nav pressed={"test"}/>
       <main className="test">
         <div className={styles.container}>
         {questions.map(question => <TestItem key={question.id} {...question} />)}

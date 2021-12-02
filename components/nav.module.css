@@ -13,7 +13,6 @@
   background: #3ab1fc;
   font-size: 16px;
   padding: 12px 20px;
-  text-transform: capitalize;
   letter-spacing: 0.025em;
   color: white;
   transition: all 0.125s ease;
@@ -23,6 +22,6 @@
   background-color: #a1dcff;
 }
 
-.nav > .picked {
+.nav > .pressed {
   background-color: #1c5c81;
 }
