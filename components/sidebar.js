@@ -7,14 +7,14 @@ export default function Sidebar(props) {
       <Link href="/education/laws">
         <a className={props.picked === "laws" ? styles.picked : ""}>Законы</a>
       </Link>
-      <Link href="/education/laws">
-        <a className={props.picked === "0" ? styles.picked : ""}>Temp</a>
+      <Link href="/education/profession">
+        <a className={props.picked === "profession" ? styles.picked : ""}>О профессии</a>
       </Link>
-      <Link href="/education/laws">
-        <a className={props.picked === "1" ? styles.picked : ""}>Temp</a>
+      <Link href="/education/skills">
+        <a className={props.picked === "skills" ? styles.picked : ""}>Требуемые умения</a>
       </Link>
-      <Link href="/education/laws">
-        <a className={props.picked === "2" ? styles.picked : ""}>Temp</a>
+      <Link href="/education/instruction">
+        <a className={props.picked === "instruction" ? styles.picked : ""}>Инструкция</a>
       </Link>
     </nav>
   )

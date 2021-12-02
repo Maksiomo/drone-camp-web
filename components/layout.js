@@ -5,7 +5,9 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        
+        <html lang="ru" />
+        <title>Управление БПЛА</title>
+        <meta charset="utf-8"/>
       </Head>
       <main className={styles.main}>
         {children}

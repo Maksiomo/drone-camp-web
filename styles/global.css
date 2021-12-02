@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
   background-color: #d7d7d7;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -23,7 +23,8 @@ body {
 
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .practices {
@@ -32,6 +33,22 @@ body {
 }
 
 .test {
+  display: flex;
+  flex-direction: row;
+}
+
+.education-text {
+  padding: 8px;
+}
+
+.about-text {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-image {
+  padding: 8px;
   display: flex;
   flex-direction: row;
 }
