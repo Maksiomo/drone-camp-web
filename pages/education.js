@@ -4,7 +4,7 @@ import Sidebar from '../components/sidebar'
 export default function Education() {
   return (
     <div>
-      <Nav/>
+      <Nav picked={"education"}/>
       <main className="education">
         <Sidebar/>
         <p>Базовая информация</p>
