@@ -5,7 +5,7 @@ export default function Laws() {
   return (
     <div>
       <Nav/>
-      <main>
+      <main className="education">
         <Sidebar/>
         Законы и прочая
       </main>

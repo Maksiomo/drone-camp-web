@@ -5,8 +5,9 @@ export default function Education() {
   return (
     <div>
       <Nav/>
-      <main>
+      <main className="education">
         <Sidebar/>
+        <p>Базовая информация</p>
       </main>
     </div>
   )
