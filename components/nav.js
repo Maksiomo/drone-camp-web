@@ -5,16 +5,16 @@ export default function Nav(props) {
   return (
     <nav className={styles.nav}>
       <Link href="/education">
-        <a className={props.picked === "education" ? styles.picked : ""}>База знаний</a>
+        <a className={props.pressed === "education" ? styles.pressed : ""}>База знаний</a>
       </Link>
       <Link href="/practices">
-        <a className={props.picked === "practices" ? styles.picked : ""}>Практика</a>
+        <a className={props.pressed === "practices" ? styles.pressed : ""}>Практика</a>
       </Link>
       <Link href="/test">
-        <a className={props.picked === "test" ? styles.picked : ""}>Тест</a>
+        <a className={props.pressed === "test" ? styles.pressed : ""}>Тест</a>
       </Link>
       <Link href="/">
-        <a className={props.picked === "about" ? styles.picked : ""}>О нас</a>
+        <a className={props.pressed === "about" ? styles.pressed : ""}>О нас</a>
       </Link>
     </nav>
   )

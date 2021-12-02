@@ -4,9 +4,9 @@ import Sidebar from '../../components/sidebar'
 export default function Skills() {
   return (
     <div>
-      <Nav picked={"education"} />
+      <Nav pressed={"education"} />
       <main className="education">
-        <Sidebar picked={"skills"}/>
+        <Sidebar pressed={"skills"}/>
         <div className="education-text">
           <p><h2>Умения</h2></p>
         </div>

@@ -4,7 +4,7 @@ import TestItem from '../components/testItem'
 export default function Test() {
   return (
     <div>
-      <Nav picked={"test"}/>
+      <Nav pressed={"test"}/>
       <main className="test">
         <TestItem/>
       </main>
