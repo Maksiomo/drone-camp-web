@@ -19,7 +19,8 @@ body {
 
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .practices {
@@ -34,4 +35,16 @@ body {
 
 .education-text {
   padding: 8px;
+}
+
+.about-text {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-image {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
 }
