@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  padding-top: 10px;
+}
+.test_item {
+  align-items: center;
+  background-color: #cccccc;
+  border-radius: 10px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.test_item > h5 {
+  text-align: center;
+  margin: 0;
+  text-transform: capitalize;
+  color: #333;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+.test_item > ul {
+  text-align: center;
+  text-transform: capitalize;
+  color: #444;
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+
+.test_item > ul li {
+  list-style-type: none;
+  margin-left: 0;
+}
