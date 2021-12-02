@@ -5,7 +5,7 @@ export default function Nav(props) {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <a className={props.picked == "about" ? styles.picked : ""}>О нас</a>
+        <a className={props.picked === "about" ? styles.picked : ""}>О нас</a>
       </Link>
       <Link href="/education">
         <a className={props.picked === "education" ? styles.picked : ""}>База знаний</a>

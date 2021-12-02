@@ -6,7 +6,7 @@ export default function Laws() {
     <div>
       <Nav picked={"education"}/>
       <main className="education">
-        <Sidebar/>
+        <Sidebar picked={"laws"}/>
         <div>
           <h2>Введение</h2>
           <p>gjkr<br/>gsjbkd</p>
