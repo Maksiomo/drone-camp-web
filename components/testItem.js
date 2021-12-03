@@ -3,8 +3,10 @@ import styles from './test.module.css'
 export default function TestItem ({id, title, answears}) {
     let count = 0;
     return(
+        <div className={styles.test_item}>
         <fieldset id={"form" + id}>
             <p>{title}</p>
+            <hr></hr>
             {answears.map(ans => 
             <div key={"form" + id + "radio" + count}>
                 <input 
@@ -17,5 +19,6 @@ export default function TestItem ({id, title, answears}) {
             </div>
             )}
         </fieldset>
+        </div>
     )
 }

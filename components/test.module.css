@@ -2,33 +2,39 @@
   width: 100%;
   padding-top: 10px;
 }
-.test_item {
+.test_item > fieldset {
   align-items: center;
-  background-color: #cccccc;
+  background-color: #e9e9e9;
+  border: none;
   border-radius: 10px;
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
-.test_item > h5 {
+.test_item > fieldset > p {
   text-align: center;
   margin: 0;
-  text-transform: capitalize;
   color: #333;
   font-size: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 6%;
 }
-.test_item > ul {
-  text-align: center;
-  text-transform: capitalize;
+.test_item > fieldset > hr {
+  height: 1px;
+  border: none;
+  background-color: #cacece;
+}
+.test_item > fieldset > div {
+  text-align: left;
   color: #444;
   font-size: 16px;
-  padding-bottom: 10px;
-  padding-left: 0;
-}
-
-.test_item > ul li {
-  list-style-type: none;
-  margin-left: 0;
+  align-items: center;
+  width: 85%;
+  border: 1px solid #cacece;
+  border-radius: 5px;
+  padding: 9px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
