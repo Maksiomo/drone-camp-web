@@ -1,29 +1,21 @@
-import Link from 'next/link'
-import { useLayoutEffect } from 'react/cjs/react.development'
 import styles from './test.module.css'
 
-export default function TestItem ({id, title, var1, var2}) {
+export default function TestItem ({id, title, answears}) {
+    let count = 0;
     return(
-        <>
-        
-        <div className={styles.test_item}>
-            <h5>{title}</h5>
-            <ul>
-                <li>
-                    <label>
-                        <input type="checkbox" defaultChecked={false}/>
-                        <span>{var1}</span>
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <input type="checkbox" defaultChecked={false}/>
-                        <span>{var2}</span>
-                    </label>
-                </li>
-            </ul>
-        </div>
-        </>
-        
+        <fieldset id={"form" + id}>
+            <p>{title}</p>
+            {answears.map(ans => 
+            <div id={"form" + id + "radio" + count} key={"form" + id + "radio" + count}>
+                <input 
+                    type="radio"
+                    id={"radio" + count}
+                    name={"answear" + id}
+                    value="false"
+                />
+                <label htmlFor={"radio" + count++}>{ans}</label>
+            </div>
+            )}
+        </fieldset>
     )
 }

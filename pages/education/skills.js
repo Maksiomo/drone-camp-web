@@ -8,7 +8,7 @@ export default function Skills() {
       <main className="education">
         <Sidebar pressed={"skills"}/>
         <div className="education-text">
-          <p><h2>Умения</h2></p>
+          <h2>Умения</h2>
         </div>
       </main>
     </div>

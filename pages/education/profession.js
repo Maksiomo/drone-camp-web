@@ -8,7 +8,7 @@ export default function Profession() {
       <main className="education">
         <Sidebar pressed={"profession"}/>
         <div className="education-text">
-          <p><h2>О профессии</h2></p>
+          <h2>О профессии</h2>
         </div>
       </main>
     </div>
