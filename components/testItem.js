@@ -6,14 +6,14 @@ export default function TestItem ({id, title, answears}) {
         <fieldset id={"form" + id}>
             <p>{title}</p>
             {answears.map(ans => 
-            <div id={"form" + id + "radio" + count} key={"form" + id + "radio" + count}>
+            <div key={"form" + id + "radio" + count}>
                 <input 
                     type="radio"
-                    id={"radio" + count}
+                    id={`form${id}radio${count}`}
                     name={"answear" + id}
                     value="false"
                 />
-                <label htmlFor={"radio" + count++}>{ans}</label>
+                <label htmlFor={`form${id}radio${count++}`}>{ans}</label>
             </div>
             )}
         </fieldset>

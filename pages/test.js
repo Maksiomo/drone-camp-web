@@ -15,7 +15,9 @@ export default function Test() {
 
   const submit = event => {
     event.preventDefault();
-    console.log(event.target.form1);
+    //console.log(event.nativeEvent.srcElement.form1radio0.value);
+    console.log(event.target.form1radio0.checked);
+    //console.log(event.nativeEvent.srcElement);
   }
 
   return (
