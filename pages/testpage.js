@@ -1,45 +1,47 @@
 import React from 'react';
-import {Bar} from 'react-chartjs-2';
+import {Bubble} from 'react-chartjs-2';
 import { Chart as ChartJS } from 'chart.js/auto';
 
 const data = {
-  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-  datasets: [{
-    label: '# of Votes',
-    data: [12, 19, 3, 5, 2, 3],
-    backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(255, 159, 64, 0.2)'
-    ],
-    borderColor: [
-      'rgba(255, 99, 132, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255, 206, 86, 1)',
-      'rgba(75, 192, 192, 1)',
-      'rgba(153, 102, 255, 1)',
-      'rgba(255, 159, 64, 1)'
-    ],
-    borderWidth: 1
-  }]
-}
-
-export default () => ({
-  displayName: 'BarExample',
-  render() {
-    return (
-      <div>
-        <h2>Bar Example (custom size)</h2>
-        <Bar
-          data={data}
-          options={{
-            maintainAspectRatio: false
-          }}
-        />
-      </div>
-    );
-  }
-});
+    labels: ['January'],
+    datasets: [
+      {
+        label: 'My First dataset',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(75,192,192,0.4)',
+        borderColor: 'rgba(75,192,192,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(75,192,192,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 1,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+        pointHoverBorderColor: 'rgba(220,220,220,1)',
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: [{x:5,y:1,r:3},{x:10,y:40,r:3},{x:10,y:20,r:5}, {x:15,y:30,r:10}, {x:20,y:40,r:5}]
+      }
+    ]
+  };
+  
+  export default () => ({
+    displayName: 'BubbleExample',
+  
+    render() {
+      return (
+        <div className="graph">
+          <h2>Bubble Example</h2>
+          <Bubble
+            data={data}
+            width={40}
+            height={20}
+          />
+        </div>
+      );
+    }
+  });
