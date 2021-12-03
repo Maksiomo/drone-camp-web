@@ -5,7 +5,7 @@ export default function Practices() {
     <div>
       <Nav pressed={"practices"}/>
       <main className="practices">
-        <iframe src="https://playcanv.as/p/JERg21J8/"></iframe>
+        <iframe src="https://playcanv.as/b/azhwFd8w"></iframe>
       </main>
     </div>
   )
