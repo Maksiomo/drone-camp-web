@@ -7,7 +7,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #e9e9e9;
+  background-color: #cfcfcf;
   border-radius: 5px;
   border: none;
   padding: 8px 14px;
@@ -23,7 +23,7 @@
 
 .test_item > fieldset {
   align-items: center;
-  background-color: #e9e9e9;
+  background-color: #b4dafc;
   border: none;
   border-radius: 20px;
   width: 50%;
@@ -50,7 +50,7 @@
 .test_item > fieldset > hr {
   height: 1px;
   border: none;
-  background-color: #cacece;
+  background-color: #1c5c81;
 }
 .test_item > fieldset > div {
   text-align: left;
@@ -58,7 +58,7 @@
   font-size: 16px;
   align-items: center;
   width: 85%;
-  border: 1px solid #cacece;
+  border: 1px solid #1c5c81;
   border-radius: 5px;
   padding: 9px;
   display: block;
@@ -67,5 +67,5 @@
 }
 
 .test_item > fieldset > div:hover {
-  background-color: #c7c7c7;
+  background-color: #94bde0;
 }
