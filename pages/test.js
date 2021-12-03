@@ -10,7 +10,7 @@ export default function Test() {
     ["Элероны", "Рули направления", "Вертикальные стабилизаторы", "Рули высоты"]
   ];
   const [questions, setQuestions] = useState ([
-        {id: 1, title: "Что необходимо для возникнования подъемной силы?", answears: answears[0]},
+        {id: 1, title: "Что необходимо для возникновения подъемной силы?", answears: answears[0]},
         {id: 2, title: "Какие части самолета не относятся к органам управления?", answears: answears[1]},
   ])
 
