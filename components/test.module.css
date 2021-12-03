@@ -7,18 +7,18 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #cfcfcf;
+  background-color: #3ab1fc;
   border-radius: 5px;
   border: none;
   padding: 8px 14px;
 }
 
 .container > form button:hover {
-  background-color: #c7c7c7;
+  background-color: #a1dcff;
 }
 
 .container > form button:active {
-  background-color: #a8a8a8;
+  background-color: #1c5c81;
 }
 
 .test_item > fieldset {
