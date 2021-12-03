@@ -13,6 +13,9 @@ export default function Nav(props) {
       <Link href="/test">
         <a className={props.pressed === "test" ? styles.pressed : ""}>Тест</a>
       </Link>
+      <Link href="/cabinet">
+        <a className={props.pressed === "cabinet" ? styles.pressed : ""}>Личный кабинет</a>
+      </Link>
       <Link href="/">
         <a className={props.pressed === "about" ? styles.pressed : ""}>О нас</a>
       </Link>
