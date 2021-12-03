@@ -89,6 +89,7 @@ export default function UserLk () {
         setTestStats("Баллов: 44 из 120")
         setRaiting("")
         setPractiseStats("")
+        window.scrollTo(0,document.body.scrollHeight)
         } 
         else setTestStats("")
     }
@@ -98,6 +99,7 @@ export default function UserLk () {
             setPractiseStats("Баллов за полет: 53 из 120")
             setRaiting("")
             setTestStats("")
+            window.scrollTo(0,document.body.scrollHeight)
         }
         else setPractiseStats("")
     }
@@ -107,6 +109,7 @@ export default function UserLk () {
             setRaiting("15 место из 35 студентов")
             setTestStats("")
             setPractiseStats("")
+            window.scrollTo(0,document.body.scrollHeight)
         }
         else setRaiting("")
     }
