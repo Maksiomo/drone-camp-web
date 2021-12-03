@@ -2,36 +2,32 @@ import user from '../public/user.png'
 import Image from 'next/image'
 import styles from './userlk.module.css'
 import { useState } from 'react'
-import graphTest from '../public/graph_test.png'
-import graphPractise from '../public/graph_practise.png'
 
 export default function UserLk () {
-    const [testPic, setTestPic] = useState("")
-    function showTestPic(){
-        if(testPic === "") {
-        setTestPic(<Image alt="Tests statistics" src={graphTest} width={230} height={148}/>)
+    const [testStats, setTestStats] = useState("")
+    function showTestStats(){
+        if(testStats === "") {
+        setTestStats("Набрано 50 баллов из 75")
         setRaiting("")
-        setPractisePic("")
+        setPractiseStats("")
         } 
-        else {
-            setTestPic("")
-        }
+        else setTestStats("")
     }
-    const [practisePic, setPractisePic] = useState("")
-    function showPractisePic(){
-        if (practisePic === "") {
-            setPractisePic(<Image alt="Practise statistics" src={graphPractise} width={230} height={148}/>)
-            setTestPic("")
+    const [practiseStats, setPractiseStats] = useState("")
+    function showPractiseStats(){
+        if (practiseStats === "") {
+            setPractiseStats("Пройдено 14 практик из 18")
             setRaiting("")
+            setTestStats("")
         }
-        else setPractisePic("")
+        else setPractiseStats("")
     }
     const [raiting, setRaiting] = useState("")
     function showRaiting(){
         if (raiting === "") {
             setRaiting("45 место из 350 студентов")
-            setTestPic("")
-            setPractisePic("")
+            setTestStats("")
+            setPractiseStats("")
         }
         else setRaiting("")
     }
@@ -47,13 +43,12 @@ export default function UserLk () {
             <hr></hr>
             <p>Пройдено заданий: 15/20, средняя оценка: 4.65</p>
             <div className="buttons">
-                <button onClick={showTestPic}>Статистика тестов</button>
-                <button onClick={showPractisePic}>Статистика практики</button>
+                <button onClick={showTestStats}>Статистика тестов</button>
+                <button onClick={showPractiseStats}>Статистика практики</button>
                 <button onClick={showRaiting}>Место в рейтинге</button>
             </div>
             <div className="stats">
-                <p>{raiting}</p>
-                <p className="image">{testPic || practisePic}</p>
+                <p>{testStats || practiseStats || raiting}</p>
             </div>
         </div>
     )
