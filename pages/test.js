@@ -17,8 +17,8 @@ export default function Test() {
   const submit = event => {
     event.preventDefault();
     let res = 0, maxRes = 2;
-    res = event.target.form1radio0.checked ? res + 1 : res + 0;
-    res = event.target.form2radio0.checked ? res + 1 : res + 0;
+    res = event.target.form1radio1.checked ? res + 1 : res + 0;
+    res = event.target.form2radio2.checked ? res + 1 : res + 0;
     setResults(`Правильных ответов ${res} из ${maxRes}`);
   }
 
