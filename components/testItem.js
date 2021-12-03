@@ -1,7 +1,9 @@
 import styles from './test.module.css'
+import {useState} from 'react'
 
 export default function TestItem ({id, title, answears}) {
     let count = 0;
+
     return(
         <div className={styles.test_item}>
         <fieldset id={"form" + id}>
@@ -12,7 +14,7 @@ export default function TestItem ({id, title, answears}) {
                 <input 
                     type="radio"
                     id={`form${id}radio${count}`}
-                    name={"answear" + id}
+                    name={`answear${id}`}
                     value="false"
                 />
                 <label htmlFor={`form${id}radio${count++}`}>{ans}</label>

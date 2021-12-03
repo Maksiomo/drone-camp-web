@@ -4,6 +4,7 @@ import {useState} from 'react'
 import styles from '../components/test.module.css'
 
 export default function Test() {
+  const [results, setResults] = useState("");
   let answears = [
     ["вариант 1", "вариант 2"],
     ["вариант 1", "вариант 2", "вариант 3"]
@@ -15,9 +16,10 @@ export default function Test() {
 
   const submit = event => {
     event.preventDefault();
-    //console.log(event.nativeEvent.srcElement.form1radio0.value);
-    console.log(event.target.form1radio0.checked);
-    //console.log(event.nativeEvent.srcElement);
+    let res = 0, maxRes = 2;
+    res = event.target.form1radio0.checked ? res + 1 : res + 0;
+    res = event.target.form2radio0.checked ? res + 1 : res + 0;
+    setResults(`Правильных ответов ${res} из ${maxRes}`);
   }
 
   return (
@@ -28,9 +30,10 @@ export default function Test() {
           <form onSubmit={submit}>
             {questions.map(question => <TestItem key={question.id} {...question} />)}
             <div>
-              <button type="submit">Submit</button>
+              <button type="submit">Отправить ответы</button>
             </div>
           </form>
+          <p>{results}</p>
         </div>
       </main>
     </div>
