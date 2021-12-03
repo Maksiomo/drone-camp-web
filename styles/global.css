@@ -120,6 +120,14 @@ body {
   padding: 8px 14px;
 }
 
+.registration > div > form > button:hover {
+  background: #f5f4f4;
+}
+
+.registration > div > button:hover {
+  background: #f5f4f4;
+}
+
 .points button {
   margin-top: 5%;
   display: block;
