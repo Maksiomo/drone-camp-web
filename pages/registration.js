@@ -14,17 +14,22 @@ export default function Registration() {
     }
 
     return (
+      <main className='registration'>
       <div>
-        <form onSubmit={submit}>
+        <form onSubmit={submit} className='points'>
             <label htmlFor="login">Введите логин</label>
             <input type="text" id="login" name="login" placeholder="Логин"/>
+            <hr></hr>
             <label htmlFor="password">Введите пароль</label>
             <input type="password" id="password" name="password" placeholder=""/>
+            <hr></hr>
             <label htmlFor="passwordAgain">Повторите пароль</label>
             <input type="password" id="passwordAgain" name="passwordAgain" placeholder=""/>
-            <button type="submit">Зарегистрироваться</button>
+            <hr></hr>
+            <button type="submit" className="have-account">Зарегистрироваться</button>
         </form>
-        <button onClick={login}>Уже есть аккаунт</button>
+        <button onClick={login} className="have-account">Уже есть аккаунт</button>
       </div>
+      </main>
     )
   }

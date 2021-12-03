@@ -55,7 +55,7 @@ export default function UserLk () {
             </div>
             <div className="stats">
                 <p>{practiseStats || raiting}</p>
-                {logo}
+                <p>{logo}</p>
             </div>
         </div>
     )
