@@ -14,7 +14,7 @@ export default function Course(props) {
         <a className={props.pressed === "skills" ? styles.pressed : ""}>Экзамен</a>
       </Link>
       <Link href="/cabinet/#">
-        <a className={props.pressed === "instruction" ? styles.pressed : ""}>Помощь</a>
+        <a className={props.pressed === "instruction" ? styles.pressed : ""}>Оформить отчет о пользователе</a>
       </Link>
     </nav>
   )
