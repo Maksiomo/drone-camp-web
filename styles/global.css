@@ -44,12 +44,11 @@ body {
 
 .about-text {
   padding: 8px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .about-image {
   padding: 8px;
-  display: flex;
-  flex-direction: row;
+  display: block;
+  margin: 0 auto;
 }
