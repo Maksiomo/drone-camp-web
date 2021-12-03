@@ -2,7 +2,7 @@ import Nav from '../components/nav'
 import Image from 'next/image'
 import logo from '../public/logo.png'
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <Nav pressed={"about"}/>
